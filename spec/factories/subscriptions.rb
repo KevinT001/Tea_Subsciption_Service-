@@ -4,7 +4,7 @@ FactoryBot.define do
     customer
     title { Faker::Food.fruits }
     price { Faker::Number.between(from: 10, to: 20) }
-    status ["Active", "Inactive"]
+    status { ["Active", "Inactive"] }
     frequency {Faker::Number.between(from: 1, to: 4) }
   end
 end
