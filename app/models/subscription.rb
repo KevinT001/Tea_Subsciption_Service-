@@ -1,7 +1,8 @@
 class Subscription < ApplicationRecord
-  validates_presences_of :title, :price, :status, :frequency
+  validates_presence_of :title, :price, :frequency
 
-  status:["Active", "Inactive"]
+  validates_presence_of :status, inclusion: ["Active", "Inactive"]
 
   belongs_to :tea
-  belongs_to :customer
+  belongs_to :customer 
+end 
