@@ -46,6 +46,11 @@ Tea Subscription Service is a small project designed to mock an online tea busin
 5. To run this server, run `rails s` in the terminal and rails will start the development server. To stop the local server, use command `Control + C`.
 6. Please use Postman to view endpoint information. url: http://localhost:3000<'END POINT HERE> 
 
+## Schema 
+
+![Schema](https://user-images.githubusercontent.com/36166420/220972381-a0efbd35-c24c-49c5-ab54-d716dab45f3b.png)
+
+
 ## End Points 
 
 Post subscribe a customer to a tea subscription
@@ -55,6 +60,7 @@ Post subscribe a customer to a tea subscription
   ![example for mock data](https://user-images.githubusercontent.com/36166420/220968488-f1ff26b0-44cf-4e9c-a9f7-8afe5f1b366f.png)
   
 - `Post /api/v1/customers/#{customer.id}/subscriptions`
+
 ![POST New customer subscription](https://user-images.githubusercontent.com/36166420/220966874-382ff6ba-3aa1-4448-af31-a3d2efb0d84e.png)
 
 Get Learning Resources for a Particular Country
