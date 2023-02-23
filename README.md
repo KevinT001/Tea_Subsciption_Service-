@@ -51,6 +51,7 @@ Tea Subscription Service is a small project designed to mock an online tea busin
 Post subscribe a customer to a tea subscription
   * Note: Please include mock data in post in  tab `body` with attributes of a subscription and select `raw` and `JSON`  option. 
   Example :
+  
   ![example for mock data](https://user-images.githubusercontent.com/36166420/220968488-f1ff26b0-44cf-4e9c-a9f7-8afe5f1b366f.png)
   
 - `Post /api/v1/customers/#{customer.id}/subscriptions`
@@ -62,6 +63,7 @@ Get Learning Resources for a Particular Country
 
 Get all of a customer's subscriptions
 - `GET /api/v1/customers/#{customer.id}/subscriptions`
+
 ![Get all customer subscriptions](https://user-images.githubusercontent.com/36166420/220965606-fdaac66b-dcdc-47f0-9f31-7610885f7ab3.png)
 
 
