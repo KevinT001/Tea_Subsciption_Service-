@@ -15,14 +15,19 @@ class Api::V1::SubscriptionsController < ApplicationController
 
   def create 
     subscription = Subscription.new(subscription_params)
+    binding.pry
+
     if subscription.save! 
-      render json: SubscriptionSerializer.new(subscription), status: 200
+      # render json: SubscriptionSerializer.new(subscription), status: 200
+      render json: { "Success": "Enjoy your new Tea Subscription hippy"}, status: 200
     else 
       render json: { error: "Error occured, please check if customer information is valid" }, status: 401
     end
   end
 
+  def patch 
 
+  end
   private
   
   def subscription_params
