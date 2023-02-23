@@ -72,7 +72,7 @@ Get all of a customer's subscriptions
 
 ![Get all customer subscriptions](https://user-images.githubusercontent.com/36166420/220965606-fdaac66b-dcdc-47f0-9f31-7610885f7ab3.png)
 
-
+### Contributor:
 <table>
   <tr>
     <td>Kevin Ta</td>
