@@ -35,6 +35,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'faker'
   gem 'rspec'
+  
 end
 
 group :development do
