@@ -3,8 +3,8 @@ FactoryBot.define do
     tea 
     customer
     title { Faker::Food.fruits }
-    price { Faker::Number.between(from: 10, to: 20) }
+    price { Faker::Number.between(from: 10.00, to: 20.50) }
     status { ["Active", "Inactive"] }
-    frequency {Faker::Number.between(from: 1, to: 4) }
+    frequency {Faker::Number.between(from: 0, to: 2) }
   end
 end
