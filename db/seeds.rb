@@ -15,7 +15,7 @@
 @tea_3 = Tea.create(title: "Teazing you", description: "Joke of a tea", temperature: Faker::Number.between(from: 55, to: 100), brew_time: Faker::Number.between(from: 3, to: 10 ) )
 @tea_4 = Tea.create(title: "Tea-ching moment", description: "Let your senses learn", temperature: Faker::Number.between(from: 115, to: 200), brew_time: Faker::Number.between(from: 7, to: 15 ) )
 
-@sub_1 = @cust_1.subscriptions.create!(title: "Winter Warmth", price: 20, status: "Active", frequency: 1, tea_id: @tea_1.id )
-@sub_2 = @cust_1.subscriptions.create!(title: "International Meddley", price: 50, status: "Inactive", frequency: 4, tea_id: @tea_2.id )
-@sub_3 = @cust_2.subscriptions.create!(title: "Summer Breeze", price: 30, status: "Active", frequency: 3, tea_id: @tea_3.id )
-@sub_4 = @cust_2.subscriptions.create!(title: "Fantastic Classic", price: 20, status: "Inactive", frequency: 2, tea_id: @tea_4.id )
+@sub_1 = @cust_1.subscriptions.create!(title: "Winter Warmth", price: 20.00, status: "Active", frequency: 0, tea_id: @tea_1.id )
+@sub_2 = @cust_1.subscriptions.create!(title: "International Meddley", price: 50.00, status: "Inactive", frequency: 2, tea_id: @tea_2.id )
+@sub_3 = @cust_2.subscriptions.create!(title: "Summer Breeze", price: 30.00, status: "Active", frequency: 1, tea_id: @tea_3.id )
+@sub_4 = @cust_2.subscriptions.create!(title: "Fantastic Classic", price: 20.00, status: "Inactive", frequency: 2, tea_id: @tea_4.id )

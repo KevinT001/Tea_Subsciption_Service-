@@ -15,10 +15,8 @@ RSpec.describe 'Subscription patch' do
                               }
       headers = { 'CONTENT_TYPE' => 'application/json' }                        
       patch "/api/v1/customers/#{customer.id}/subscriptions/#{subscription.id}", headers: headers, params: JSON.generate(updated_status_param)
-
       parsed_response = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
- 
       expect(subscription.status).to eq("Inactive")
       
     end 
