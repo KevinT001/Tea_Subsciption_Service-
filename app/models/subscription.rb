@@ -4,4 +4,5 @@ class Subscription < ApplicationRecord
 
   belongs_to :tea
   belongs_to :customer 
+  enum :frequency { bi_weekly: 0, monthly: 1, bi_monthly: 2 }
 end 

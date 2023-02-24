@@ -5,6 +5,7 @@ RSpec.describe 'Subscriptions Post endpoint' do
     it 'Will respond with a success message upon saved subscription' do 
       customer = create(:customer)
       tea = create(:tea)
+      tea_2 = create(:tea)
       subscription_params = {"title": "Teaze me ",
                               "price": 20,
                               "status": "Active", 
@@ -19,6 +20,17 @@ RSpec.describe 'Subscriptions Post endpoint' do
       parsed_response = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(200)
       expect(response).to be_successful   
+
+
+      subscription_params_2 = {"title": "Tea-ch me ",
+                        "price": 10,
+                        "status": "Active", 
+                        "frequency": 2,
+                        "tea_id": tea_2.id,
+                        "customer_id": customer.id
+                      }
+      post "/api/v1/customers/#{customer.id}/subscriptions", params: subscription_params_2
+      expect(customer.subscriptions.count).to eq(2)
      end
   end
 end
