@@ -63,7 +63,7 @@ Post subscribe a customer to a tea subscription
 
 ![POST New customer subscription](https://user-images.githubusercontent.com/36166420/220966874-382ff6ba-3aa1-4448-af31-a3d2efb0d84e.png)
 
-Get Learning Resources for a Particular Country
+Update a customer's subscription
 - `Patch /api/v1/customers#{customer.id}/subscriptions`
 
 
