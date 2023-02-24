@@ -60,16 +60,17 @@ Post subscribe a customer to a tea subscription
   ![example for mock data](https://user-images.githubusercontent.com/36166420/220968488-f1ff26b0-44cf-4e9c-a9f7-8afe5f1b366f.png)
   
 - `Post /api/v1/customers/#{customer.id}/subscriptions`
-
-![POST New customer subscription](https://user-images.githubusercontent.com/36166420/220966874-382ff6ba-3aa1-4448-af31-a3d2efb0d84e.png)
+ Example response:
+ ![POST RESPONSE](https://user-images.githubusercontent.com/36166420/221108635-3a630fb2-a699-416d-9709-a9e194d7c393.png)
 
 Update a customer's subscription
 - `Patch /api/v1/customers#{customer.id}/subscriptions`
-
+Example response:
+![Patch subscription](https://user-images.githubusercontent.com/36166420/221108239-8e577fe2-4fb0-42e6-8f68-45dce1e56359.png)
 
 Get all of a customer's subscriptions
 - `GET /api/v1/customers/#{customer.id}/subscriptions`
-
+Example response:
 ![Get all customer subscriptions](https://user-images.githubusercontent.com/36166420/220965606-fdaac66b-dcdc-47f0-9f31-7610885f7ab3.png)
 
 ### Contributor:
